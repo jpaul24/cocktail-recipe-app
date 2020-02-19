@@ -12,5 +12,19 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.new
   end
 
+  def create
+    @cocktail = Cocktail.new(params[:cocktail])
+    @cocktail.save
+  end
 
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
+  end
+
+  private
+
+  def cocktail_params
+    params.require(:cocktail).permit(:name, :description, :photo)
+  end
 end
