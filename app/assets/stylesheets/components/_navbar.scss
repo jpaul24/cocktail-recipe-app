@@ -1,12 +1,18 @@
-.navbar-lewagon {
+.nav {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  padding: 10px;
+  background-color: firebrick;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  h3 {
+    margin-bottom: 0;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-options {
+  display: flex;
+  p {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
 }
