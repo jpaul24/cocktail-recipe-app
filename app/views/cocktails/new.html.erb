@@ -2,7 +2,7 @@
   <%= simple_form_for(@cocktails) do |f| %>
          <%= f.input :name %>
          <%= f.input :description %>
-
+         <%= f.input :photo, as: :file %>
          <%= f.button :submit, "Add New Cocktail", class: 'text-center btn btn-primary'%>
         <% end %>
 </div>
