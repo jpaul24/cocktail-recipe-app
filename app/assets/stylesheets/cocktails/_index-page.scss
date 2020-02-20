@@ -1,10 +1,14 @@
 .banner {
-  background-image: url("./app/assets/images/cocktail-head.jpg");
   background-size: cover;
   background-position: center;
-  height: 25vh;
+  height: 60vh;
+  text-align: left;
+  padding-top: 20vh;
+  h2, p {
+    padding-left: 10vw;
+  }
 }
 
 .index-container {
-  height: 200vh;
+
 }

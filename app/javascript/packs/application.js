@@ -1,4 +1,4 @@
 import "bootstrap";
-import { fixNav } from "../components/nav";
+import { initUpdateNavbarOnScroll } from '../components/nav';
 
-window.addEventListener('scroll', fixNav);
+initUpdateNavbarOnScroll();
