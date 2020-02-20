@@ -5,6 +5,23 @@
   </div>
   <div class="index-container">
     <h1>The Cocktails</h1>
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+      <div class="col-sm-4">
+        <p><%= link_to "Remove", cocktail_path(cocktail), method: :delete %></p>
+        <%= link_to cocktail_path(cocktail) do %>
+          <div class="flip">
+            <div class="front" style="background-image: url('<%= cocktail.photo %>');">
+            </div>
+            <div class="back">
+               <h2><%= cocktail.name %></h2>
+               <p><%= cocktail.description %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
   </div>
 
 </div>
