@@ -11,8 +11,10 @@
         <p><%= link_to "Remove", cocktail_path(cocktail), method: :delete %></p>
         <%= link_to cocktail_path(cocktail) do %>
           <div class="cocktail-card">
-             <h2><%= cocktail.name %></h2>
+            <div class="cocktail-info">
+              <h2><%= cocktail.name %></h2>
              <p><%= cocktail.description %></p>
+            </div>
           </div>
         <% end %>
       </div>
